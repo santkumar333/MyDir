@@ -1,0 +1,254 @@
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stage1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stage2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stage3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stage4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="1600" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle">AI-Powered Traceability Workflow</text>
+  
+  <!-- STAGE 1 -->
+  <g id="stage1-group">
+    <rect x="50" y="100" width="1100" height="280" rx="15" fill="url(#stage1)" opacity="0.15"/>
+    <rect x="50" y="100" width="1100" height="280" rx="15" fill="none" stroke="url(#stage1)" stroke-width="3"/>
+    
+    <text x="600" y="135" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#a78bfa" text-anchor="middle">🚀 STAGE 1: Pre-Development</text>
+    
+    <!-- Inputs -->
+    <rect x="80" y="160" width="180" height="80" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="170" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">INPUTS</text>
+    <text x="170" y="205" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">• Jira Story</text>
+    <text x="170" y="220" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">• AC & Figmas</text>
+    <text x="170" y="235" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">• Requirements</text>
+    
+    <!-- AI Process -->
+    <path d="M 260 200 L 320 200" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowPurple)"/>
+    <rect x="320" y="160" width="200" height="80" rx="8" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="420" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#a78bfa" text-anchor="middle">AI ANALYSIS</text>
+    <text x="420" y="205" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Generates Test Plans</text>
+    <text x="420" y="220" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Traceability Matrix</text>
+    <text x="420" y="235" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Impact Analysis</text>
+    
+    <!-- Outcome -->
+    <path d="M 520 200 L 580 200" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowPurple)"/>
+    <rect x="580" y="160" width="200" height="80" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="680" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">OUTCOME</text>
+    <text x="680" y="205" font-family="Arial, sans-serif" font-size="11" fill="#10b981" text-anchor="middle">✓ Ready for Dev</text>
+    <text x="680" y="220" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Test Plan Approved</text>
+    <text x="680" y="235" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">All Dependencies Set</text>
+    
+    <!-- Key Info Box -->
+    <rect x="820" y="160" width="300" height="80" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="970" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#a78bfa" text-anchor="middle">Approved Test Plan Foundation</text>
+    <text x="970" y="205" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">This becomes the baseline for all</text>
+    <text x="970" y="220" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">subsequent traceability checks</text>
+  </g>
+  
+  <!-- Arrow between stages -->
+  <path d="M 600 380 L 600 420" stroke="#64748b" stroke-width="3" marker-end="url(#arrowGray)"/>
+  
+  <!-- STAGE 2 -->
+  <g id="stage2-group">
+    <rect x="50" y="420" width="1100" height="300" rx="15" fill="url(#stage2)" opacity="0.15"/>
+    <rect x="50" y="420" width="1100" height="300" rx="15" fill="none" stroke="url(#stage2)" stroke-width="3"/>
+    
+    <text x="600" y="455" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#60a5fa" text-anchor="middle">🚀 STAGE 2: Dev Complete - Context Collection</text>
+    
+    <!-- Trigger -->
+    <rect x="80" y="480" width="200" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="180" y="505" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">TRIGGER</text>
+    <text x="180" y="525" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">MR Created / Before</text>
+    <text x="180" y="540" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Merge / Manual Run</text>
+    
+    <!-- Context Sources -->
+    <path d="M 280 515 L 320 515" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    
+    <rect x="320" y="480" width="120" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="380" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa" text-anchor="middle">Git Diff</text>
+    <text x="380" y="515" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Code Changes</text>
+    
+    <rect x="450" y="480" width="120" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="510" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa" text-anchor="middle">Jira Story</text>
+    <text x="510" y="515" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">AC + Req</text>
+    
+    <rect x="580" y="480" width="120" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="640" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa" text-anchor="middle">Test Plan</text>
+    <text x="640" y="515" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Approved Base</text>
+    
+    <rect x="710" y="480" width="120" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="770" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa" text-anchor="middle">Figmas</text>
+    <text x="770" y="515" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">UI Context</text>
+    
+    <!-- AI Output -->
+    <rect x="320" y="560" width="530" height="130" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="585" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#60a5fa" text-anchor="middle">AI GENERATES</text>
+    
+    <text x="370" y="610" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="start">• Detailed Test Cases (preconditions, steps, expected results)</text>
+    <text x="370" y="630" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="start">• Expected Automated Test Coverage Analysis</text>
+    <text x="370" y="650" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="start">• Code-to-Requirement Mapping</text>
+    <text x="370" y="670" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="start">• Branch/Edge Coverage Expectations</text>
+    
+    <!-- Status -->
+    <rect x="890" y="560" width="230" height="130" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="1005" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#60a5fa" text-anchor="middle">Full Context Ready</text>
+    <text x="1005" y="610" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">✓ All inputs collected</text>
+    <text x="1005" y="630" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">✓ Test cases generated</text>
+    <text x="1005" y="650" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">✓ Ready for analysis</text>
+  </g>
+  
+  <!-- Arrow between stages -->
+  <path d="M 600 720 L 600 760" stroke="#64748b" stroke-width="3" marker-end="url(#arrowGray)"/>
+  
+  <!-- STAGE 3 -->
+  <g id="stage3-group">
+    <rect x="50" y="760" width="1100" height="380" rx="15" fill="url(#stage3)" opacity="0.15"/>
+    <rect x="50" y="760" width="1100" height="380" rx="15" fill="none" stroke="url(#stage3)" stroke-width="3"/>
+    
+    <text x="600" y="795" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#34d399" text-anchor="middle">🚀 STAGE 3: Analysis - Traceability & Gap Detection</text>
+    
+    <!-- Analysis Blocks -->
+    <rect x="80" y="820" width="250" height="140" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="205" y="845" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">Git Diff Analysis</text>
+    <text x="205" y="870" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">🟢 New Tests → Create TMX</text>
+    <text x="205" y="890" font-family="Arial, sans-serif" font-size="10" fill="#fbbf24" text-anchor="middle">🟡 Modified → Update TMX</text>
+    <text x="205" y="910" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">🔴 Deleted → Mark Obsolete</text>
+    <text x="205" y="935" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Auto-link to Story + Requirements</text>
+    
+    <rect x="350" y="820" width="250" height="140" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="475" y="845" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">Traceability Matching</text>
+    <text x="475" y="870" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Story ↔ Requirements</text>
+    <text x="475" y="890" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Requirements ↔ Test Cases</text>
+    <text x="475" y="910" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Test Cases ↔ Automated Tests</text>
+    <text x="475" y="930" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Code Changes ↔ Test Updates</text>
+    <text x="475" y="950" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Code Paths ↔ Coverage</text>
+    
+    <rect x="620" y="820" width="250" height="140" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="745" y="845" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">Coverage Gap Analysis</text>
+    <text x="745" y="870" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">• Missing Coverage</text>
+    <text x="745" y="890" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">• Incomplete Coverage</text>
+    <text x="745" y="910" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">• Inconsistent Mapping</text>
+    <text x="745" y="930" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">• Edge Cases Missing</text>
+    <text x="745" y="950" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">• Regression Gaps</text>
+    
+    <rect x="890" y="820" width="250" height="140" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="1015" y="845" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">Status Assessment</text>
+    <text x="1015" y="875" font-family="Arial, sans-serif" font-size="11" fill="#10b981" text-anchor="middle">✅ COVERED</text>
+    <text x="1015" y="895" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">All coverage present</text>
+    <text x="1015" y="920" font-family="Arial, sans-serif" font-size="11" fill="#fbbf24" text-anchor="middle">⚠️ PARTIALLY COVERED</text>
+    <text x="1015" y="940" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Some gaps found</text>
+    
+    <!-- Automated Feedback -->
+    <rect x="80" y="980" width="1060" height="130" rx="8" fill="#134e4a" stroke="#10b981" stroke-width="2"/>
+    <text x="610" y="1005" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34d399" text-anchor="middle">AUTOMATED FEEDBACK PUBLISHING</text>
+    
+    <rect x="110" y="1020" width="320" height="70" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="270" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">GitLab MR Comment</text>
+    <text x="270" y="1058" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Status + Gaps + Suggestions</text>
+    <text x="270" y="1073" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Approval Recommendation</text>
+    
+    <rect x="450" y="1020" width="320" height="70" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="610" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">Jira Story Comment</text>
+    <text x="610" y="1058" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Traceability Status Update</text>
+    <text x="610" y="1073" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Coverage Summary + Links</text>
+    
+    <rect x="790" y="1020" width="320" height="70" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="950" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">Jira TMX Updates</text>
+    <text x="950" y="1058" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Create/Update Test Cases</text>
+    <text x="950" y="1073" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Link to MR + Requirements</text>
+  </g>
+  
+  <!-- Arrow between stages -->
+  <path d="M 600 1140 L 600 1180" stroke="#64748b" stroke-width="3" marker-end="url(#arrowGray)"/>
+  
+  <!-- STAGE 4 -->
+  <g id="stage4-group">
+    <rect x="50" y="1180" width="1100" height="360" rx="15" fill="url(#stage4)" opacity="0.15"/>
+    <rect x="50" y="1180" width="1100" height="360" rx="15" fill="none" stroke="url(#stage4)" stroke-width="3"/>
+    
+    <text x="600" y="1215" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fbbf24" text-anchor="middle">🚀 STAGE 4: Action & Completion</text>
+    
+    <!-- Response Options -->
+    <rect x="80" y="1240" width="280" height="130" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="1265" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#10b981" text-anchor="middle">✅ COVERED</text>
+    <text x="220" y="1290" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ MR can be merged</text>
+    <text x="220" y="1310" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ QA approves</text>
+    <text x="220" y="1330" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ Proceed to completion</text>
+    <text x="220" y="1355" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">No action needed ✓</text>
+    
+    <rect x="380" y="1240" width="280" height="130" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="520" y="1265" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fbbf24" text-anchor="middle">⚠️ PARTIALLY COVERED</text>
+    <text x="520" y="1290" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">AI suggests fixes:</text>
+    <text x="520" y="1310" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ Add new tests</text>
+    <text x="520" y="1330" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ Update existing tests</text>
+    <text x="520" y="1355" font-family="Arial, sans-serif" font-size="10" fill="#fbbf24" text-anchor="middle">Re-trigger after changes</text>
+    
+    <rect x="680" y="1240" width="280" height="130" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    <text x="820" y="1265" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ef4444" text-anchor="middle">❌ MISSING</text>
+    <text x="820" y="1290" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">🚫 MR blocked</text>
+    <text x="820" y="1310" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">AI provides exact steps:</text>
+    <text x="820" y="1330" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ Missing code paths</text>
+    <text x="820" y="1350" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">→ Untested requirements</text>
+    
+    <!-- Final Output -->
+    <rect x="980" y="1240" width="160" height="130" rx="8" fill="#2d1b4e" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1060" y="1260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fbbf24" text-anchor="middle">FINAL REPORT</text>
+    <text x="1060" y="1280" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Coverage Metrics</text>
+    <text x="1060" y="1295" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Action Summary</text>
+    <text x="1060" y="1310" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">TMX Created/Updated</text>
+    <text x="1060" y="1325" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Gap Analysis Archive</text>
+    <text x="1060" y="1340" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Full Audit Trail</text>
+    <text x="1060" y="1355" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">History Stored</text>
+    
+    <!-- Completion Banner -->
+    <rect x="80" y="1395" width="1060" height="120" rx="8" fill="#134e4a" stroke="#10b981" stroke-width="3"/>
+    <text x="610" y="1425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34d399" text-anchor="middle">🎯 FULLY AUTOMATED CLOSED-LOOP TRACEABILITY ACHIEVED</text>
+    
+    <text x="320" y="1455" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Creates & updates TMX</text>
+    <text x="320" y="1475" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Maps Story → AC → Req → Tests</text>
+    <text x="320" y="1495" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Analyzes code via Git diff</text>
+    
+    <text x="610" y="1455" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Auto-posts feedback to MR/Jira</text>
+    <text x="610" y="1475" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Coverage insights & suggestions</text>
+    <text x="610" y="1495" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Blocks merge if critical gaps</text>
+    
+    <text x="900" y="1455" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Complete traceability report</text>
+    <text x="900" y="1475" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ Historical audit trail</text>
+    <text x="900" y="1495" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">✔ No missing coverage in prod</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker
